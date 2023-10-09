@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Registration Form</title>
+</head>
+<body>
+    <h1>Registration Form</h1>
+    <form action="registration.php" method="POST">
+        <label for="name">name:</label>
+        <input type="text" id="name" name="name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required><br><br>
+
+ 
+
+        <label for="birthdate">Date of Birth:</label>
+        <input type="date" id="birthdate" name="birthdate" required><br><br>
+
+        <label for="gender">Gender:</label>
+        <input type="radio" id="male" name="gender" value="Male"> Male
+        <input type="radio" id="female" name="gender" value="Female"> Female
+        <input type="radio" id="other" name="gender" value="Other"> Other<br><br>
+
+
+        <input type="submit" value="Register">
+    </form>
+<script>
+function changecolor(){
+    let randomColor=Math.floor(Math.random()*16777215).toString(16);
+    document.body.style.background='#'+randomColor;
+}
+setInterval(changecolor,1000);
+</script>
+</body>
+</html>
